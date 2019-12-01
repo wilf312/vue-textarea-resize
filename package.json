@@ -1,6 +1,6 @@
 {
   "name": "vue-textarea-resize",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/textarea-resize.umd.js",
   "module": "dist/textarea-resize.esm.js",
   "unpkg": "dist/textarea-resize.min.js",
