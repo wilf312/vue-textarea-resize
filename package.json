@@ -23,5 +23,8 @@
     "rollup-plugin-vue": "^5.1.4",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "v-autosize": "^1.0.3"
   }
 }
