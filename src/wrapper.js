@@ -1,5 +1,5 @@
 // vue コンポーネントのインポート
-import component from './my-component.vue';
+import component from './textarea-resize.vue';
 
 // Vue.use() によって実行される install 関数を定義
 export function install(Vue) {
