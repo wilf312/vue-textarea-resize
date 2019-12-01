@@ -5,7 +5,7 @@ import component from './textarea-resize.vue';
 export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('MyComponent', component);
+  Vue.component('TextareaResize', component);
 }
 
 // Vue.use() のためのモジュール定義を作成

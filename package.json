@@ -11,20 +11,42 @@
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/textarea-resize.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/textarea-resize.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/textarea-resize.min.js"
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/textarea-resize.min.js",
+    "test": "jest"
   },
   "repository": "git@github.com:wilf312/vue-textarea-resize.git",
   "author": "OkadaGenya <g.okada.wilf+github@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
     "rollup": "^1.27.6",
     "rollup-plugin-buble": "^0.19.8",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-vue": "^5.1.4",
     "vue": "^2.6.10",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "v-autosize": "^1.0.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "modulePathIgnorePatterns": [
+      ".history"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }
